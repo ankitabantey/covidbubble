@@ -1,34 +1,18 @@
 import './page2.css';
 import React from "react";
-import ReactDOM from 'react-dom'
-/* Chat function on this page */
+import { Button } from 'react-bootstrap';
+import history from './history';
+/* Page 2 */
 
 
-function chat() {
-
-    function redirect() {
-        window.location.href = 'http://localhost:5000';
-        return null;
-    } 
-
-    const element = (
-        <div className = "chat">
-            <h1>FindMyHomie Page 2</h1>
-            <h2> Chat function can go here</h2>
-            {/* <button type="button" onclick="redirect()">Click Me!</button> */}
-        </div>
-      );
-      
-
-      ReactDOM.render(element, document.getElementById('root'));
-
+function page3() {
     return ( 
         <div className = "chat">
-            <h1>FindMyHomie Page 2</h1>
-            <h2> Chat function can go here</h2>
-             <button type="button" onclick={redirect()}>Click Me!</button>
+            <h1>FindMyHomie Page 3</h1>
+            <h2> bluh bluh bluh</h2>
+            <Button variant="btn btn-success" onClick={() => {history.push('/page3'); window.location.reload();}}>Click for page3</Button>
         </div>
     );
 }
 
-export default chat;
+export default page3;

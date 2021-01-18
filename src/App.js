@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import page1 from "./Pages/page1";
 import page2 from "./Pages/page2";
-import chat from "./Pages/page3";
+import page3 from "./Pages/page3";
 import history from './Pages/history';
 {/* import page2 from "./Pages/page2"; */}
 
@@ -27,7 +27,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={page1} />
             <Route path="/page2" exact component={page2} />
-             <Route path="/page3" exact component={chat}/>
+             <Route path="/page3" exact component={page3}/>
              {/* /<Route path="/rep" exact render={redirect()}/> */}
             <Redirect to="/" />
           </Switch>
